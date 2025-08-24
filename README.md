@@ -25,12 +25,6 @@ pip install qrcode[pil] numpy pillow
 
 📌 Usage
 
-Clone this repository:
-
-git clone https://github.com/your-username/advanced-qr-generator.git
-cd advanced-qr-generator
-
-
 Place your background image in the project folder (example: image2.png)
 
 Run the script:
@@ -68,4 +62,3 @@ end_color   = (230, 230, 250)
 Adjust module shape (currently circles, can be squares, rounded, etc.)
 
 Use a different background image
-# techduo-QR-generator
