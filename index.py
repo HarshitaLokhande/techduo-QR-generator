@@ -1,3 +1,10 @@
+# Documentation:
+
+# This project generates a stylized, scannable QR code from a text string (up to 50 characters). The QR matrix is generated using the qrcode Python library, which handles the data encoding and error correction automatically.
+
+# For rendering, each QR module is drawn manually on a background image using the PIL library. Instead of the default square modules, circular shapes are used to give a unique visual style. A vertical color gradient is applied to the modules, transitioning from white at the top to light lavender at the bottom. The QR code retains a quiet zone around it to ensure that it remains scannable by standard QR readers.
+
+   
 import qrcode
 import numpy as np
 from PIL import Image, ImageDraw
@@ -63,4 +70,5 @@ for r in range(rows):
 
 # save the final QR image
 bg_image.save("qr_with_gradient.png")
+
 print("QR image with circular modules and gradient saved as qr_with_gradient.png")
